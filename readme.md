@@ -8,6 +8,7 @@ Before you start, make sure you have installed:
 
 - [Go](https://go.dev/dl/) **>= 1.21**
 - [Git](https://git-scm.com/)
+- [Atlas](https://atlasgo.io/guides/orms/gorm)
 
 ## 🛠 Installation
 
