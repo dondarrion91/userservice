@@ -30,6 +30,14 @@ func user(r *echo.Echo, db *gorm.DB) {
 	crud(userGroup, userDAL)
 }
 
+func role(r *echo.Echo, db *gorm.DB) {
+	roleGroup := r.Group("/role")
+
+	roleDal := dal.NewRoleDal(db)
+
+	crud(roleGroup, roleDal)
+}
+
 func address(r *echo.Echo, db *gorm.DB) {
 	addressGroup := r.Group("/address")
 
@@ -46,6 +54,7 @@ func Routes(r *echo.Echo, db *gorm.DB) *echo.Echo {
 	// Grupo de routes
 	user(r, db)
 	address(r, db)
+	role(r, db)
 
 	return r
 }
