@@ -1,0 +1,23 @@
+# Binaries for programs
+*.exe
+*.bin
+
+# Temporary build artifacts
+/tmp/
+
+# IDE-specific files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Test-related files
+testdata/output/
+
+# Environment-specific configuration
+.env
+config.local.yaml
+
+migrations
+
+build
